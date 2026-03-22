@@ -6,9 +6,14 @@ from app import app
 
 print("🔥 Bot Starting...")
 
-# IMPORT MODULE AFTER app
-import modules.qr
+# Import modules AFTER app init
+try:
+    import modules.qr
+    print("📦 QR MODULE LOADED")
+except Exception as e:
+    print("❌ Module Import Error:", e)
 
 print("✅ Modules Loaded")
 
+# Run bot
 app.run()
