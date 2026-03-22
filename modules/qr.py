@@ -11,7 +11,7 @@ from bot import app
 from database.mongo import db
 import config
 
-
+print("📦 QR MODULE LOADED")
 def create_qr(amount, upi, name="Payment"):
     upi_link = f"upi://pay?pa={upi}&pn={name}&am={amount}&cu=INR"
 
