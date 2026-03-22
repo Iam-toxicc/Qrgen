@@ -5,6 +5,8 @@
 from pyrogram import Client
 import config
 
+print("🔥 Bot Starting...")
+
 app = Client(
     "Toxicqrbot",
     api_id=config.API_ID,
@@ -13,5 +15,7 @@ app = Client(
 )
 
 import modules.qr
+
+print("✅ Modules Loaded")
 
 app.run()
